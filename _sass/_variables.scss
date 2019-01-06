@@ -1,0 +1,24 @@
+
+$yellow: rgb(235, 162, 28);
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: rgb(236, 236, 236);
+$white: rgb(255, 255, 255);
+$coal: #272323;
+$flame: rgb(207, 94, 94);
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
