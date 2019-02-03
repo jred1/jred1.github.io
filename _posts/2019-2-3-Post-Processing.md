@@ -26,17 +26,21 @@ If a shader is simple, such as multiplying the input pixel by a certain color to
 
 ## Features
 Note: I suggest to open the images of the comparisons in a new tab to get a closer look.
-### -Flow
+### - Flow
 <div align="center">
     <img src="/images/FlowComparisonWithOverlay.png" width="900">
 </div>
 
-### -Blending
+### - Blending
 <div align="center">
     <img src="/images/TreeBlend.png" width="900">
 </div>
 
-### -Close-Up Appearance
+### - Close-Up Appearance
 <div align="center">
     <img src="/images/CloseUpFidelityWithOverlay.png" width="900">
 </div>
+
+### - Hiding Texture Tiling
+
+
