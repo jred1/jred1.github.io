@@ -18,3 +18,25 @@ Before I go into specifics of the custom effects, I will explain the basics of h
 Since the output of the shader is just the color for a single pixel, the code must be ran for every pixel on the screen. This means that for a standard 1080p monitor, the shader must be run 2,073,600 times each frame. I am developing these effects with an emphasis on performance, so I do not want any significant difference in performance between it being on and off even at 500+ frames per second(fps). If the game is running at 500fps then the program must run 1,036,800,000 times each second. This is possible thanks to the power of graphics cards, but the performance of a post processing effect can quickly get out of hand with complex effects.
 
 If a shader is simple, such as multiplying the input pixel by a certain color to tint the image, then the performance degridation is negligible. On the other hand, if one run of a shader requres sampling several dozen pixels, and performing several dozen calculations to each, then the fps can drop massively. 
+
+## Inspiration
+-Kurahara filter and anisotropic kurahara filter
+
+-Compare sampling grids
+
+# Features
+Note: I suggest to open the images of the comparisons in a new tab to get a closer look.
+## Flow
+<div align="center">
+    <img src="/images/FlowComparisonWithOverlay.png" width="900">
+</div>
+
+## Blending
+<div align="center">
+    <img src="/images/TreeBlend.png" width="900">
+</div>
+
+## Close-Up Appearance
+<div align="center">
+    <img src="/images/CloseUpFidelityWithOverlay.png" width="900">
+</div>
