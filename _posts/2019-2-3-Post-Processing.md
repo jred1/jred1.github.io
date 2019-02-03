@@ -11,4 +11,6 @@ The visual quality of a game is a major contributing factor to how emmersive the
 <!--more-->
 
 
+
+## The Basics
 Before I go into specifics of the custom effects, I will explain the basics of how post processing works. A post processing effect is programmed in a shader langage, in this case HLSL, and defines how a single pixel should be displayed. These programs are reffered to as shaders. The main input for this program is the main texture that is rendered from the main camera in the scene. This is the texture that is eventually displayed to the screen. The shader can access parameters set by the programmer, such as textures, colors, floating-point numbers and integers. Since the output of the shader is just the color for a single pixel, the code must be ran for every pixel on the screen. This means that for a standard 1080p monitor, the shader must be run 2,073,600 times each frame. I am developing for VR, so the frames per second is 90. Meaning the program must run 186,624,000 times each second. This is possible thanks to the power of graphics cards, but the performance of a post processing effect can quickly get out of hand.
