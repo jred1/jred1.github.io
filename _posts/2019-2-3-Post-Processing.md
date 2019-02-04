@@ -19,10 +19,13 @@ Since the output of the shader is just the color for a single pixel, the code mu
 
 If a shader is simple, such as multiplying the input pixel by a certain color to tint the image, then the performance degridation is negligible. On the other hand, if one run of a shader requres sampling several dozen pixels, and performing several dozen calculations to each, then the fps can drop massively. 
 
-## Inspiration
--Kurahara filter and anisotropic kurahara filter
 
--Compare sampling grids
+## Inspiration and Implementation
+The idea for the custom effects started with the kurahara filter. The purpose of the kurahara filter is to reduce the noise in an image without blurring the image. During this process, it is able to smooth simplify forms. It accomplishes this by taking color samples of pixels in four regions surrounding the current pixel. The mean of the region with the lowest standard deviation becomes the new color for the current pixel. The number of samples used for each region is good for elimiating extreme noise, but it is overboard as a post processing effect. The image below shows the difference between the standard kuwahara and my custom implementation.
+
+<div align="center">
+    <img src="/images/PixelSampling.png" width="500">
+</div>
 
 ## Features
 Note: I suggest to open the images of the comparisons in a new tab to get a closer look.
@@ -42,5 +45,8 @@ Note: I suggest to open the images of the comparisons in a new tab to get a clos
 </div>
 
 ### - Hiding Texture Tiling
+
+
+
 
 
