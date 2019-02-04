@@ -42,7 +42,6 @@ Below I will highlight some of the traits of the custom effects including:
 - Flow and feature preservation
 - Blending
 - Close-Up appearance
-- Hiding texture tiling
 ###### Note: I suggest opening the images in a new tab to get a closer look.
 
 ###  Flow and Feature Preservation
