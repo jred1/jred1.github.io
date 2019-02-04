@@ -14,6 +14,7 @@ The visual quality of a game is a major contributing factor to how immersive the
 
 
 ## The Basics
+
 Before I go into specifics of the custom effects, I will explain the basics of how post-processing works. A post-processing effect is programmed in a shader language, HLSL in this case,  and defines how a single pixel should be displayed. These programs are referred to as shaders. The main input for this program is the main texture that is rendered from the main camera in the scene. This is the texture that is eventually displayed to the screen. The shader can access parameters set by the programmer, such as textures, colors, floating-point numbers and integers. 
 
 Since the output of the shader is just the color for a single pixel, the code must be run for every pixel on the screen. This means that for a standard 1080p monitor, the shader must be run 2,073,600 times each frame. I am developing these effects with an emphasis on performance, so I do not want any significant difference in performance between it being on and off even at 500+ frames per second(fps). If the game is running at 500fps then the program must run 1,036,800,000 times each second. This is possible thanks to the power of graphics cards, but the performance of a post-processing effect can quickly get out of hand with complex effects.
@@ -22,6 +23,7 @@ If a shader is simple, such as multiplying the input pixel by a certain color to
 
 
 ## Inspiration and Implementation
+
 The idea for the custom effects started with the Kuwahara filter. The purpose of the Kuwahara filter is to reduce the noise in an image without blurring the image. During this process, it is able to smooth simplify forms. It accomplishes this by taking color samples of pixels in four regions surrounding the current pixel. The mean of the region with the lowest standard deviation becomes the new color for the current pixel. The number of samples used for each region is good for eliminating extreme noise, but it is overboard as a post-processing effect. The image below shows the difference between the standard Kuwahara and my custom implementation.
 
 <div align="center">
