@@ -24,7 +24,7 @@ If a shader is simple, such as multiplying the input pixel by a certain color to
 
 ## Inspiration and Implementation
 
-The idea for the custom effects started with the Kuwahara filter. The purpose of the Kuwahara filter is to reduce the noise in an image without blurring the image. During this process, it is able to smooth simplify forms. It accomplishes this by taking color samples of pixels in four regions surrounding the current pixel. The mean of the region with the lowest standard deviation becomes the new color for the current pixel. The number of samples used for each region is good for eliminating extreme noise, but it is overboard as a post-processing effect. The image below shows the difference between the standard Kuwahara and my custom implementation.
+The idea for the custom effects started with the Kuwahara filter. The purpose of the Kuwahara filter is to reduce the noise in an image without blurring the image. During this process, it is able to smooth and simplify forms. It accomplishes this by taking color samples of pixels in four regions surrounding the current pixel. The mean of the region with the lowest standard deviation becomes the new color for the current pixel. The number of samples used for each region is good for eliminating extreme noise, but it is overboard as a post-processing effect. The image below shows the difference between the standard Kuwahara and my custom implementation.
 
 <div align="center">
     <img src="/images/PixelSampling.png" width="500">
