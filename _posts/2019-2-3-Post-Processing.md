@@ -62,7 +62,7 @@ The picture below compares the scene with only basic post effects (left) with th
 
 ###  Close-Up Appearance
 
-One dilemma with game development is getting enough detail out of texture without them taking up too much space in memory. This becomes a major problem in VR because the player can look as close as they want to a surface, and breaking the immersion when they see a low-resolution texture. As displayed on the top half of the picture below, the texture is not high enough resolution for the viewing distance, causing an undesirable blocky and blurry visual on the rock. The bottom half of the image demonstrates how the custom effects are able to hide the low resolution by keeping a sharp view of the surface, no matter how close the camera is. This is a result of the effect being a screen-space modification to the environment, rather than a world space feature such as a texture.
+One dilemma with game development is getting enough detail out of a texture without it taking up too much space in memory. This becomes a major problem in VR because the player can look as close as they want at a surface, breaking the immersion when they see a low-resolution texture. As displayed on the top half of the picture below, the texture is not high enough resolution for the viewing distance, causing an undesirable blocky and blurry visual on the rock. The bottom half of the image demonstrates how the custom effects are able to hide the low resolution by keeping a sharp view of the surface, no matter how close the camera is. This is a result of the effect being a screen-space modification to the environment, rather than a world space feature such as a texture.
 
 <div align="center">
     <img src="/images/CloseUpFidelityWithOverlay.png" width="900">
