@@ -38,4 +38,18 @@ Typical batching involves combining the meshes from several objects into a singl
 Batching meshes is helpful, but only to an extent. The game would not perform well if the grass across the entire terrain was combined into a single mesh. This is due to the number of vertices that need to be rendered in each frame. If any part of a mesh is visible on screen, then the shader needs to run on every vertex in the mesh. So, the batch area is kept to a reasonable size (under 30 square meters). 
 
 
+## Performance
+<div align="center">
+    <img src="/images/GrassPerf.png" width="500">
+</div>
+
+The most important aspect of this grass system is that it performs well while overcoming the faults of typical systems. The picture above shows a scene in three different states: no grass, the built-in Unity grass, and my custom grass system. To demonstrate my system’s performance at higher densities, the built-in grass system was set up with similar vertex count, the same batch size, and same draw distance. This scene without any grass was able to run at an average of 380 fps (frames per second) while the built-in system averaged 170 fps and the custom system ran at an average of 350 fps. The custom system is able to provide much better performance and with more features than the built-in system. A significant part of the performance difference between the built-in system and the custom system is due to the shader. I discussed image effect shaders in my previous post, but these shaders are different as they are used to determine how a mesh is rendered. Even though the shader for the custom system is overall more complex, it avoids one particular and very expensive effect. This effect is called alpha clipping and is demonstrated below.
+
+<div align="center">
+    <img src="/images/alphaClipEx.png" width="300">
+</div>
+
+The purpose of this effect is to make parts of a mesh completely transparent to fake more complex geometry. When applied to a quad mesh (which is what is used for the built-in system) it makes the quad appear as a plane of grass. However, this technique has two major flaws. On the performance side, the mesh is treated as transparent geometry, which is expensive to compute. On the appearance side, the grass is visibly flat, especially when seen up close which makes it unsuitable for most virtual reality or first-person games.
+
+
 
