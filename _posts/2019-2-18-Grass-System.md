@@ -49,7 +49,7 @@ The most important aspect of this grass system is that it performs well while ov
     <img src="/images/alphaClipEx.png" width="300">
 </div>
 
-The purpose of this effect is to make parts of a mesh completely transparent to fake more complex geometry. When applied to a quad mesh (which is what is used for the built-in system) it makes the quad appear as a plane of grass. However, this technique has two major flaws. On the performance side, the mesh is treated as transparent geometry, which is expensive to compute. On the appearance side, the grass is visibly flat, especially when seen up close which makes it unsuitable for most virtual reality or first-person games.
+The purpose of alpha clipping is to make parts of a mesh completely transparent to fake more complex geometry. When applied to a quad mesh (which is what is used for the built-in system) it makes the quad appear as a plane of grass. However, this technique has two major flaws. On the performance side, the mesh is treated as transparent geometry, which is expensive to compute. On the appearance side, the grass is visibly flat, especially when seen up close which makes it unsuitable for most virtual reality or first-person games. My shader does not use alpha clipping and I instead use a clump of grass blades for each instance of grass.
 
 
 
