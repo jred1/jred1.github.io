@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 
   line-height: 1.7;
-  margin: 1em 0 15px;
+  margin: .5em 0 0;
   padding: 0;
 
   @include mobile {
@@ -248,7 +248,7 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   border-bottom: 1px solid #cce;
 }
 
@@ -258,6 +258,7 @@ nav {
 }
 
 .post {
+  display: flow-root;
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -267,11 +268,16 @@ nav {
     font-style: italic;
   }
 
+.clear {
+  clear: both;
+}
+
   .comments {
     margin-top: 10px;
   }
 
   .read-more {
+    float:right;
     text-transform: lowercase;
     font-size: 14px;
     letter-spacing: 1px;
