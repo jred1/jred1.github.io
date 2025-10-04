@@ -188,6 +188,13 @@ img {
     margin: 0 auto;
   }
 }
+.site-title-line {
+  display: flex;
+  align-items: center; /* This vertically aligns the name and icons */
+}
+.site-title-line .social-icons {
+  margin-left: 10px; /* This adds space between the name and icons */
+}
 
 .site-name {
   margin: 0;

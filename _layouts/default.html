@@ -21,9 +21,11 @@
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <div class="site-title-line">
+              <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+              <div>{% include svg-icons.html %}</div>
+            </div>
             <p class="site-description">{{ site.description }}</p>
-          <div margin="5px 5px 5px 5px">{% include svg-icons.html %}</div>
           </div>
 
           <nav>
