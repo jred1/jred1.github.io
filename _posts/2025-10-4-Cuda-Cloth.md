@@ -26,7 +26,7 @@ represents the particle of interest. If the particle of interest is located at
 coordinates (  i  ,  j  ) in a 2D arrangement of particles,  the springs attached to it 
 are as follows:
 </p>
-<p>
+<p class="clear">
 <ul>
 <li>stretch springs (blue): (<em>i</em>, <em>j</em>) connects to each (<em>i</em>+1, <em>j</em>), (<em>i</em>-1, <em>j</em>), (<em>i</em>, <em>j</em>+1), and (<em>i</em>, <em>j</em>-1) </li>
 <li>shear springs (green): (<em>i</em>, <em>j</em>) connects to each (<em>i</em>+1, <em>j</em>+1), (<em>i</em>-1, <em>j</em>+1), (<em>i</em>-1, <em>j</em>+1), and (<em>i</em>-1, <em>j</em>-1)</li>
