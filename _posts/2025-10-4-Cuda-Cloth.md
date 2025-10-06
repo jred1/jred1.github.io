@@ -230,3 +230,8 @@ underutilized for any of the implementations. However, as the particle
 count increases, the GPU implementations easily beat out the CPU 
 implementations. 
 </p>
+
+<h2>References</h2>
+Stuyck, Tuur. <em>Cloth Simulation for Computer Graphics</em>. Morgan & Claypool Publishers, 2018. 
+Shiraishi. (2015). <em>simpleGL</em> . Retrieved from 
+https://github.com/zchee/cuda-sample/blob/master/2_Graphics/simpleGL
