@@ -8,7 +8,7 @@ excerpt_separator: <!--more-->
 A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces. 
 The goal of this project is developing and optimizing a cloth simulation to be able to adequately run in real-time by utilizing gpu computation.
 <!--more-->
-<h2>Structure</h2>
+<h2 class="clear">Structure</h2>
 <p>The basis of the implementation for the cloth simulation used is a mass-spring system. The basic 
 construction of a mass-spring system is: a collection of particles (point masses), connected by a series of springs. 
 The specifics of how the springs connect to certain masses are 
