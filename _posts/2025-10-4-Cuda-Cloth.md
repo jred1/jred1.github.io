@@ -26,11 +26,13 @@ represents the particle of interest. If the particle of interest is located at
 coordinates (  i  ,  j  ) in a 2D arrangement of particles,  the springs attached to it 
 are as follows:
 </p>
+<p>
 <ul>
 <li>stretch springs (blue): (<em>i</em>, <em>j</em>) connects to each (<em>i</em>+1, <em>j</em>), (<em>i</em>-1, <em>j</em>), (<em>i</em>, <em>j</em>+1), and (<em>i</em>, <em>j</em>-1) </li>
 <li>shear springs (green): (<em>i</em>, <em>j</em>) connects to each (<em>i</em>+1, <em>j</em>+1), (<em>i</em>-1, <em>j</em>+1), (<em>i</em>-1, <em>j</em>+1), and (<em>i</em>-1, <em>j</em>-1)</li>
 <li>bend springs (red): (<em>i</em>, <em>j</em>) connects to each (<em>i</em>+2, <em>j</em>), (<em>i</em>-2, <em>j</em>), (<em>i</em>, <em>j</em>+2), and (<em>i</em>, <em>j</em>-2)</li>
 </ul>
+</p>
 <p>
  Outside of understanding the basic structure of the system, the particles do not need to actually be referenced in a 2D 
 manner. Only referring to the set of particles as a 1D array allows for a more generic and streamlined 
