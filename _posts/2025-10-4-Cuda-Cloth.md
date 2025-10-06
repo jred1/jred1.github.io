@@ -232,6 +232,6 @@ implementations.
 </p>
 
 <h2>References</h2>
-Stuyck, Tuur. <em>Cloth Simulation for Computer Graphics</em>. Morgan & Claypool Publishers, 2018. 
-Shiraishi. (2015). <em>simpleGL</em> . Retrieved from 
-https://github.com/zchee/cuda-sample/blob/master/2_Graphics/simpleGL
+<div>Stuyck, Tuur. <em>Cloth Simulation for Computer Graphics</em>. Morgan & Claypool Publishers, 2018.</div>
+<div>Shiraishi. (2015). <em>simpleGL</em> . Retrieved from 
+https://github.com/zchee/cuda-sample/blob/master/2_Graphics/simpleGL</div>
