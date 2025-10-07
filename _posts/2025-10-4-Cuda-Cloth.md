@@ -8,12 +8,12 @@ excerpt_separator: <!--more-->
 A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces.
 <!--more-->
 
-## Results
+<h2 class="clear">Results</h2>
 Performance metrics were taken with a AMD Ryzen 7 3750H and NVIDIA GTX 1660 Ti<br/>
 The Binned Neighbors implementation runs at ~4 ms frame time (~240 fps) using a RTX 4070
 
 ### Speedup Over CPU at 25.6k particles
-Each Technique can be tested by changing to the corresponding index in the runSim() call
+Each Technique can be tested by changing to the corresponding index in the runSim() call.
 <hr>
 <img src="/images/performance graph.png" width="500px">
 
