@@ -4,13 +4,8 @@ title: CUDA Cloth Simulation
 excerpt_separator: <!--more-->
 ---
 ****
+<img style="float: left;height: 250px;margin: 0px 10px 10px 0px;" src="/images/Cloth Sim Gif Square.gif">
 A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces.
-<div align="center" >
-  <video height="250px" autoplay controls muted loop playsinline>
-    <source src="/videos/Cloth Sim Video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
 <!--more-->
 
 ## Results
@@ -31,5 +26,11 @@ Each Technique can be tested by changing to the corresponding index in the runSi
 |4 |Buffer| 154.68x           |
 |5 |Binned Refresh|156.70x    |
 |6 |Binned Neighbors|1,635.58x|
+
+## More Viewing Angles
+  <video height="250px" autoplay controls muted loop playsinline>
+    <source src="/videos/Cloth Sim Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
 <hr>
