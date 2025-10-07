@@ -4,7 +4,7 @@ title: CUDA Cloth Simulation
 excerpt_separator: <!--more-->
 ---
 ****
-<img style="float: left;height: 250px;margin: 0px 10px 10px 0px;" src="/images/Cloth Sim Gif Square.gif">
+<img style="float: left;height: 150px;margin: 0px 10px 10px 0px;" src="/images/Cloth Sim Gif Square.gif">
 A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces.
 <!--more-->
 
