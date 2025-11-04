@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CUDA Cloth Simulation
+github_repo: CUDA-Cloth-Simulation
 excerpt_separator: <!--more-->
 ---
 ****

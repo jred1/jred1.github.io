@@ -4,13 +4,14 @@ layout: default
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}"><div><h1>{{ post.title }}</h1></div></a>
+  <article class="post">
+    <a href="https://github.com/{{ site.footer-links.github }}/{{ post.github_repo }}"><i class="svg-icon github" style="float: right;margin-top: .8em;"></i></a>
       
+    <a href="{{ site.baseurl }}{{ post.url }}"></a><div><h1>{{ post.title }}</h1></div>
       <div class="entry">
         {{ post.excerpt }}
       </div>
-
+      </a>
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Continue</a>
     </article>
   {% endfor %}
