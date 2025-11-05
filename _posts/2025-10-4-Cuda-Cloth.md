@@ -5,9 +5,9 @@ github_repo: CUDA-Cloth-Simulation
 thumbnail: /images/Cloth Sim Gif Square.gif
 excerpt: A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces. The goal of this project is developing and optimizing a cloth simulation to be able to adequately run in real-time by utilizing gpu computation.
 ---
-<img src="{{ thumbnail }}">
+<img src="/images/Cloth Sim Gif Square.gif">
 <div class="clear">
-{{excerpt}}
+A CUDA-based GPU cloth simulation (mass-spring system) with self collision, object collision, particle pinning, gravity, and wind forces. The goal of this project is developing and optimizing a cloth simulation to be able to adequately run in real-time by utilizing gpu computation.
 </div>
 <h2 class="clear">Structure</h2>
 <p>The basis of the implementation for the cloth simulation used is a mass-spring system. The basic 
